@@ -105,6 +105,7 @@ export default function Button({
       }[size],
     },
   }[variant];
+  const Shadow = disabled || variant == "text" ? "shadow-none" : shadow;
   return (
     <button
       disabled={disabled}
@@ -116,7 +117,7 @@ export default function Button({
         disabled && style.disabled,
         font,
         rounded,
-        disabled ? "shadow-none" : shadow,
+        Shadow,
       ].join(" ")}
       onClick={handleClick}
     >

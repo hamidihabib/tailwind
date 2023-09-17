@@ -6,9 +6,9 @@ export default function Home() {
     <div>
       Home
       <div>
-        <Button variant="text" color="error" size="sm">Button</Button>
-        <Button variant="text" color="error" size="md">Button</Button>
-        <Button variant="text" shadow="shadow-sm" disabled color="error" size="2xl">TEST BUTTON</Button>
+        <Button variant="contained" color="error" size="sm">Button</Button>
+        <Button variant="contained" color="error" size="md">Button</Button>
+        <Button variant="contained" disabled shadow="shadow-sm" color="error" size="lg">TEST BUTTON</Button>
       </div>
     </div>
   );
