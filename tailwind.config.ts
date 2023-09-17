@@ -13,8 +13,9 @@ const config: Config = {
       transparent: "transparent",
       black: "#000",
       white: "#fff",
-      
+
       secondary: {
+        transparent: "#6b728030",
         50: "#f9fafb",
         100: "#f3f4f6",
         200: "#e5e7eb",
@@ -28,6 +29,7 @@ const config: Config = {
         950: "#030712",
       },
       error: {
+        transparent: "#ef444430",
         50: "#fef2f2",
         100: "#fee2e2",
         200: "#fecaca",
@@ -41,6 +43,7 @@ const config: Config = {
         950: "#450a0a",
       },
       warning: {
+        transparent: "#f9731630",
         50: "#fff7ed",
         100: "#ffedd5",
         200: "#fed7aa",
@@ -54,6 +57,7 @@ const config: Config = {
         950: "#431407",
       },
       success: {
+        transparent: "#22c55e30",
         50: "#f0fdf4",
         100: "#dcfce7",
         200: "#bbf7d0",
@@ -67,6 +71,7 @@ const config: Config = {
         950: "#052e16",
       },
       info: {
+        transparent: "#06b6d430",
         50: "#ecfeff",
         100: "#cffafe",
         200: "#a5f3fc",
@@ -80,6 +85,7 @@ const config: Config = {
         950: "#083344",
       },
       primary: {
+        transparent: "#3b82f630",
         50: "#eff6ff",
         100: "#dbeafe",
         200: "#bfdbfe",

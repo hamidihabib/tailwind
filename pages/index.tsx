@@ -1,14 +1,15 @@
-import Button from '@/components/button'
-import React from 'react'
+import React from "react";
+import Button from "@/components/button";
 
 export default function Home() {
   return (
     <div>
-      <Button disabled size='sm' color='error'>Button</Button>
-      <Button size='md' color='error'>Button</Button>
-      <Button size='lg' color='success'>Button</Button>
-      <Button size='xl' color='error'>Button</Button>
-      <Button size='2xl' color='info'>Button</Button>
+      Home
+      <div>
+        <Button variant="text" color="error" size="sm">Button</Button>
+        <Button variant="text" color="error" size="md">Button</Button>
+        <Button variant="text" shadow="shadow-sm" disabled color="error" size="2xl">TEST BUTTON</Button>
+      </div>
     </div>
-  )
+  );
 }
