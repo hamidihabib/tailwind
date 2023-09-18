@@ -22,6 +22,9 @@ export default function Button({
       router.push(href);
     }
   };
+  const Shadow = disabled || variant == "text" ? "shadow-none" : shadow;
+  const Style = "capitalize inline-flex items-center align-middle";
+
   const style = {
     text: {
       global: "font-semibold shadow-none border border-2 border-transparent",
@@ -105,8 +108,6 @@ export default function Button({
       }[size],
     },
   }[variant];
-  const Shadow = disabled || variant == "text" ? "shadow-none" : shadow;
-  const Style = "capitalize inline-flex items-center align-middle";
   return (
     <button
       disabled={disabled}
@@ -115,11 +116,11 @@ export default function Button({
         style.color,
         style.size,
         style.hover,
-        disabled && style.disabled,
+        Style,
+        Shadow,
         font,
         rounded,
-        Shadow,
-        Style,
+        disabled && style.disabled,
       ].join(" ")}
       onClick={handleClick}
     >

@@ -8,19 +8,15 @@ export default function Home() {
   return (
     <div>
       Home
-      <div>
-        <Button size="sm" color="error" endIcon={<Icon name="moon"/>} startIcon={<Icon name="chevronLeft"/>}>Button</Button>
-        <Button size="md" color="error" endIcon={<Icon name="moon"/>} startIcon={<Icon name="chevronLeft"/>}>Button</Button>
-        <Button size="lg" color="error" endIcon={<Icon name="moon"/>} startIcon={<Icon name="chevronLeft"/>}>Button</Button>
-        <Button size="xl" color="error" endIcon={<Icon name="moon"/>} startIcon={<Icon name="chevronLeft"/>}>Button</Button>
-        <Button size="2xl" color="error" endIcon={<Icon name="moon"/>} startIcon={<Icon name="chevronLeft"/>}>Button</Button>
+      <div style={{margin: 10, display: "flex", gap: 10}}>
+        <Button color="error" endIcon={<Icon name="moon"/>} startIcon={<Icon name="chevronLeft"/>}>Button</Button>
+        <Button color="error" endIcon={<Icon name="moon"/>} startIcon={<Icon name="chevronLeft"/>}>Button</Button>
+        <Button disabled color="error" endIcon={<Icon name="moon"/>} startIcon={<Icon name="chevronLeft"/>}>Button</Button>
       </div>
-      <div>
-        <Button size="sm" color="info" variant="outlined" >Button</Button>
-        <Button size="md" color="info" variant="outlined" >Button</Button>
-        <Button size="lg" color="info" variant="outlined" >Button</Button>
-        <Button size="xl" color="info" variant="outlined" >Button</Button>
-        <Button size="2xl" color="info" variant="outlined" >Button</Button>
+      <div style={{display: "flex", gap: 10, margin: 10}}>
+        <Button size="md" color="error" >Button</Button>
+        <Button size="md" color="error" >Button</Button>
+        <Button size="md" color="error" >Button</Button>
       </div>
       <h1>
        BreakPoint: {b}
