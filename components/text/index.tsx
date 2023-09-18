@@ -1,25 +1,15 @@
 import React from "react";
-type TextProps = {
-  children?: React.ReactNode;
-  text?:
-    | "sm"
-    | "md"
-    | "base"
-    | "lg"
-    | "xl"
-    | "2xl"
-    | "3xl"
-    | "4xl"
-    | "5xl"
-    | "6xl"
-    | "7xl"
-    | "8xl"
-    | "9xl";
-};
+import { TextTypes } from "@/types/TextTypes";
 
-export default function Text({ children, text = "base", ...props }: TextProps) {
+export default function Text({
+  children,
+  text = "text-base",
+  font = "font-normal",
+  classes,
+  ...props
+}: TextTypes) {
   return (
-    <p className={`text-${text}`} {...props}>
+    <p className={[text, font, classes].join(" ")} {...props}>
       {children}
     </p>
   );

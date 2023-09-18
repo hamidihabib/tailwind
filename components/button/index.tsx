@@ -97,15 +97,16 @@ export default function Button({
       }[color],
       disabled: "bg-secondary-100 text-secondary-200 hover:bg-secondary-100",
       size: {
-        sm: "px-2 py-1 text-sm",
-        md: "px-4 py-2 text-md",
-        lg: "px-6 py-3 text-lg",
-        xl: "px-8 py-4 text-xl",
-        "2xl": "px-10 py-5 text-2xl",
+        sm: "px-1 py-1 text-sm",
+        md: "px-2 py-2 text-md",
+        lg: "px-3 py-3 text-lg",
+        xl: "px-4 py-4 text-xl",
+        "2xl": "px-5 py-5 text-2xl",
       }[size],
     },
   }[variant];
   const Shadow = disabled || variant == "text" ? "shadow-none" : shadow;
+  const Style = "capitalize inline-flex items-center align-middle";
   return (
     <button
       disabled={disabled}
@@ -118,11 +119,12 @@ export default function Button({
         font,
         rounded,
         Shadow,
+        Style,
       ].join(" ")}
       onClick={handleClick}
     >
       {startIcon && <span>{startIcon}</span>}
-      {children && <span>{children}</span>}
+      {children && <span className="px-2">{children}</span>}
       {endIcon && <span>{endIcon}</span>}
     </button>
   );
